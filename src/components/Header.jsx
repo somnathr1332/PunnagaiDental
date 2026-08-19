@@ -54,7 +54,7 @@ export default function Header({ currentPage, onPageChange }) {
         {/* Logo */}
         <a href="#home" className="nav-logo" onClick={(e) => handleNav(e, 'home')}>
           <div className="nav-logo-icon" style={{ background: 'transparent', boxShadow: 'none' }}>
-            <img src="/logo.png" alt="Punnagai Dental Logo" style={{ width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply' }} />
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Punnagai Dental Logo" style={{ width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply' }} />
           </div>
           <div className="nav-logo-text" style={{ display: 'flex', flexDirection: 'column' }}>
             <strong style={{ fontFamily: 'var(--font-logo)', textTransform: 'uppercase', fontSize: '1.6rem', fontWeight: 700, lineHeight: 1.1, color: 'var(--blue-navy)', letterSpacing: '0.5px' }}>
