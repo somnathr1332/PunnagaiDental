@@ -117,9 +117,7 @@ export default function Hero() {
           </div>
 
           {/* Decorative tooth */}
-          <div className="hero-deco-tooth">
-            {TOOTH_SVG}
-          </div>
+          <div className="hero-deco-tooth">🦷</div>
         </div>
       </div>
     </section>
