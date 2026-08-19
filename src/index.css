@@ -1647,13 +1647,15 @@ textarea.form-control { resize: vertical; min-height: 110px; }
   .slots-grid { grid-template-columns: repeat(3, 1fr); }
   
   /* Chatbot */
+  .chatbot-wrapper { bottom: 20px; right: 15px; }
   .chatbot-window { 
-    right: 15px; bottom: 85px; 
+    position: fixed;
+    right: 50%; bottom: 85px; 
+    transform: translateX(50%);
     width: calc(100vw - 30px);
     max-height: 500px;
   }
-  .chatbot-trigger { width: 50px; height: 50px; bottom: 20px; right: 20px; }
-  .chatbot-trigger svg { width: 22px; height: 22px; }
+  .chatbot-trigger { width: 55px; height: 55px; }
   
   /* Modals */
   .modal-box { padding: 40px 24px; width: 90%; }
