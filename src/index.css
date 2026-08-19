@@ -1549,3 +1549,105 @@ textarea.form-control { resize: vertical; min-height: 110px; }
 .tooth-sm { width: 28px; height: 28px; }
 .tooth-md { width: 48px; height: 48px; }
 .tooth-lg { width: 80px; height: 80px; }
+
+/* =============================================
+   MOBILE MENU HELPERS
+   ============================================= */
+.nav-hamburger {
+  display: none;
+  background: none; border: none; cursor: pointer;
+  flex-direction: column; gap: 6px;
+  z-index: 101;
+  padding: 8px;
+}
+.nav-hamburger span {
+  display: block; width: 26px; height: 3px;
+  background: var(--blue-navy); border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* =============================================
+   MOBILE RESPONSIVENESS (Media Queries)
+   ============================================= */
+
+/* Tablet (Max 900px) */
+@media (max-width: 900px) {
+  /* General Sections */
+  section { padding: 80px 0; }
+  
+  /* Typography */
+  .hero-h1 { font-size: 3rem; }
+  .hero-p { font-size: 1.1rem; }
+  .section-h2 { font-size: 2.5rem; }
+  
+  /* Header Nav */
+  .nav-hamburger { display: flex; }
+  .nav-links {
+    position: fixed; top: 0; right: -100%;
+    width: 280px; height: 100vh;
+    background: white;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 30px;
+    box-shadow: -5px 0 25px rgba(0,0,0,0.1);
+    transition: right 0.4s var(--spring);
+    z-index: 99;
+  }
+  .nav-links.open { right: 0; }
+  .nav-cta { width: 100%; text-align: center; justify-content: center; margin-top: 20px; }
+  
+  /* Grids */
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+  
+  /* Flex wrappers to columns */
+  .hero-wrapper { flex-direction: column; text-align: center; gap: 40px; }
+  .hero-wrapper .hero-buttons { justify-content: center; }
+  .hero-image-side { min-height: 400px; width: 100%; }
+  
+  .about-wrapper { flex-direction: column; gap: 40px; text-align: center; }
+  
+  .doctor-wrapper { flex-direction: column; text-align: center; gap: 40px; }
+  .doctor-image-side { margin: 0 auto; width: 100%; max-width: 400px; }
+  
+  .contact-wrapper { flex-direction: column-reverse; gap: 50px; }
+  .contact-info, .contact-form-side { width: 100%; max-width: 100%; }
+}
+
+/* Mobile (Max 600px) */
+@media (max-width: 600px) {
+  /* General Sections */
+  section { padding: 60px 0; }
+  
+  /* Typography */
+  .hero-h1 { font-size: 2.2rem; }
+  .hero-p { font-size: 1rem; }
+  .section-h2 { font-size: 2rem; }
+  .section-subtitle { font-size: 0.9rem; }
+  
+  /* Header */
+  .nav-logo-text strong { font-size: 1.3rem !important; }
+  .nav-logo-text span { font-size: 0.6rem !important; }
+  
+  /* Grids */
+  .services-grid { grid-template-columns: 1fr; }
+  .works-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  
+  /* Forms */
+  .form-row { flex-direction: column; gap: 0; }
+  .form-row .form-field { margin-bottom: 16px !important; width: 100%; }
+  
+  /* Chatbot */
+  .chatbot-window { 
+    right: 15px; bottom: 85px; 
+    width: calc(100vw - 30px);
+    max-height: 500px;
+  }
+  .chatbot-trigger { width: 50px; height: 50px; bottom: 20px; right: 20px; }
+  .chatbot-trigger svg { width: 22px; height: 22px; }
+  
+  /* Modals */
+  .modal-box { padding: 40px 24px; width: 90%; }
+  .modal-box h3 { font-size: 1.4rem; }
+}
