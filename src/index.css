@@ -1598,20 +1598,27 @@ textarea.form-control { resize: vertical; min-height: 110px; }
   
   /* Grids */
   .services-grid { grid-template-columns: repeat(2, 1fr); }
-  .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+  .footer-main { grid-template-columns: repeat(2, 1fr); gap: 40px; }
   
   /* Flex wrappers to columns */
-  .hero-wrapper { flex-direction: column; text-align: center; gap: 40px; }
+  .hero-wrapper { display: flex; flex-direction: column; text-align: center; gap: 40px; }
   .hero-wrapper .hero-buttons { justify-content: center; }
   .hero-image-side { min-height: 400px; width: 100%; }
   
-  .about-wrapper { flex-direction: column; gap: 40px; text-align: center; }
+  .about-wrap { display: flex; flex-direction: column; gap: 40px; text-align: center; }
+  .about-wrap .about-features { justify-content: center; text-align: left; }
   
-  .doctor-wrapper { flex-direction: column; text-align: center; gap: 40px; }
+  .doctor-card { display: flex; flex-direction: column; text-align: center; }
   .doctor-image-side { margin: 0 auto; width: 100%; max-width: 400px; }
+  .doctor-quote { border-left: none; border-top: 3px solid var(--blue); border-radius: var(--r-sm); }
+  .doctor-stats-row { justify-content: center; }
   
-  .contact-wrapper { flex-direction: column-reverse; gap: 50px; }
-  .contact-info, .contact-form-side { width: 100%; max-width: 100%; }
+  .contact-grid { display: flex; flex-direction: column-reverse; gap: 50px; }
+  .contact-left, .contact-right { width: 100%; max-width: 100%; }
+  
+  .booking-panel { text-align: center; }
+  .booking-panel h3 { margin-bottom: 15px; }
+  .form-field { text-align: left; }
 }
 
 /* Mobile (Max 600px) */
@@ -1632,11 +1639,12 @@ textarea.form-control { resize: vertical; min-height: 110px; }
   /* Grids */
   .services-grid { grid-template-columns: 1fr; }
   .works-grid { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr; }
+  .footer-main { grid-template-columns: 1fr; }
   
   /* Forms */
-  .form-row { flex-direction: column; gap: 0; }
+  .form-row { grid-template-columns: 1fr; gap: 0; }
   .form-row .form-field { margin-bottom: 16px !important; width: 100%; }
+  .slots-grid { grid-template-columns: repeat(3, 1fr); }
   
   /* Chatbot */
   .chatbot-window { 
