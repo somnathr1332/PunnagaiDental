@@ -84,8 +84,8 @@ export default function Works() {
             <BeforeAfterSlider
               key={current.id}
               mode={current.mode}
-              beforeImage={current.beforeImage}
-              afterImage={current.afterImage}
+              beforeImage={current.afterImage}
+              afterImage={current.beforeImage}
             />
           </div>
 
