@@ -110,7 +110,7 @@ export default function Hero() {
                 </svg>
               </div>
               <div className="hfc-text">
-                <strong>⭐ 4.9 / 5 Rating</strong>
+                <strong>⭐ 4.65 / 5 Rating</strong>
                 <span>200+ Google Reviews</span>
               </div>
             </div>

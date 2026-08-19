@@ -83,7 +83,7 @@ Date & Time: ${date} at ${time}`;
         }}>
           Consultation Mode
         </label>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px' }}>
+        <div className="modes-grid">
           {MODES.map((m) => (
             <button
               key={m.id}
@@ -154,7 +154,7 @@ Date & Time: ${date} at ${time}`;
       {/* Time Slots */}
       <div className="form-field" style={{ marginBottom: '22px' }}>
         <label style={{ display: 'block', marginBottom: '8px', color: 'var(--text-headline)', fontWeight: 700, fontSize: '0.9rem' }}>Select Time Slot *</label>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(100px, 1fr))', gap: '8px' }}>
+        <div className="slots-grid">
           {TIME_SLOTS.map((slot) => (
             <button
               key={slot}

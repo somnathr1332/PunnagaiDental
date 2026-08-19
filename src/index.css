@@ -1570,6 +1570,9 @@ textarea.form-control { resize: vertical; min-height: 110px; }
    MOBILE RESPONSIVENESS (Media Queries)
    ============================================= */
 
+.modes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.slots-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 8px; }
+
 /* Tablet (Max 900px) */
 @media (max-width: 900px) {
   /* General Sections */
@@ -1644,6 +1647,7 @@ textarea.form-control { resize: vertical; min-height: 110px; }
   /* Forms */
   .form-row { grid-template-columns: 1fr; gap: 0; }
   .form-row .form-field { margin-bottom: 16px !important; width: 100%; }
+  .modes-grid { grid-template-columns: 1fr; }
   .slots-grid { grid-template-columns: repeat(3, 1fr); }
   
   /* Chatbot */
