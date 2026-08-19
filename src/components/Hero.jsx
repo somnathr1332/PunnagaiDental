@@ -116,8 +116,10 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Decorative leaf */}
-          <div className="hero-deco-leaf">🌿</div>
+          {/* Decorative tooth */}
+          <div className="hero-deco-tooth">
+            {TOOTH_SVG}
+          </div>
         </div>
       </div>
     </section>

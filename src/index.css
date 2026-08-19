@@ -633,19 +633,20 @@ section { position: relative; }
   color: var(--text-headline);
 }
 .hfc-text span { font-size: 0.75rem; color: var(--text-muted); }
-.hero-deco-leaf {
+.hero-deco-tooth {
   position: absolute;
   top: -30px; right: -30px;
   width: 90px; height: 90px;
-  background: var(--blue-pale);
+  background: var(--grad-accent);
+  color: white;
   border-radius: 50%;
   z-index: 3;
   display: flex; align-items: center; justify-content: center;
-  font-size: 2.2rem;
   animation: float-y 8s ease-in-out infinite;
   animation-delay: 1s;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 12px 30px rgba(27,127,212,0.4);
 }
+.hero-deco-tooth svg { width: 42px; height: 42px; }
 
 @media (max-width: 900px) {
   .hero { padding: 130px 0 80px; min-height: auto; }
