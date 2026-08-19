@@ -8,8 +8,8 @@ const CATEGORIES = [
     title: 'Teeth Whitening Treatment',
     desc: 'Advanced bleaching removes stubborn coffee, tea, and tobacco stains — brightening your smile up to 8 shades in a single clinical session.',
     mode: 'whitening',
-    beforeImage: 'https://saidentalmayiladuthurai.com/images/treatments/before-1.jpeg',
-    afterImage: 'https://saidentalmayiladuthurai.com/images/treatments/after-1.jpeg',
+    beforeImage: 'images/treatments/whitening_before.jpeg',
+    afterImage: 'images/treatments/whitening_after.jpeg',
     tag: 'tag-teal',
   },
   {
@@ -18,8 +18,8 @@ const CATEGORIES = [
     title: 'Single-Tooth Implant Restored',
     desc: 'Titanium post implant anchored into the jawbone, topped with a natural shade-matched porcelain crown for a lifetime of confident smiles.',
     mode: 'implant',
-    beforeImage: 'https://saidentalmayiladuthurai.com/images/treatments/before-2.jpeg',
-    afterImage: 'https://saidentalmayiladuthurai.com/images/treatments/after-2.jpeg',
+    beforeImage: 'images/treatments/implant_before.jpeg',
+    afterImage: 'images/treatments/implant_after.jpeg',
     tag: 'tag-indigo',
   },
   {
@@ -28,8 +28,8 @@ const CATEGORIES = [
     title: 'Clear Aligners Alignment',
     desc: 'Custom clear aligners corrected crowded and misaligned teeth, shifting them into optimal alignment over 9 months — invisibly.',
     mode: 'braces',
-    beforeImage: 'https://saidentalmayiladuthurai.com/images/treatments/before-3.jpeg',
-    afterImage: 'https://saidentalmayiladuthurai.com/images/treatments/after-3.jpeg',
+    beforeImage: 'images/treatments/braces_before.jpeg',
+    afterImage: 'images/treatments/braces_after.jpeg',
     tag: 'tag-coral',
   },
   {
@@ -38,8 +38,8 @@ const CATEGORIES = [
     title: 'Porcelain Veneers Placement',
     desc: 'Thin porcelain shells repaired a chipped incisor, adjusted slight spacing, and created a perfectly uniform, camera-ready smile.',
     mode: 'veneers',
-    beforeImage: 'https://saidentalmayiladuthurai.com/images/treatments/before-1.jpeg',
-    afterImage: 'https://saidentalmayiladuthurai.com/images/treatments/after-1.jpeg',
+    beforeImage: 'images/treatments/whitening_before.jpeg',
+    afterImage: 'images/treatments/whitening_after.jpeg',
     tag: 'tag-teal',
   },
 ];
@@ -84,8 +84,8 @@ export default function Works() {
             <BeforeAfterSlider
               key={current.id}
               mode={current.mode}
-              beforeImage={current.afterImage}
-              afterImage={current.beforeImage}
+              beforeImage={`${import.meta.env.BASE_URL}${current.afterImage}`}
+              afterImage={`${import.meta.env.BASE_URL}${current.beforeImage}`}
             />
           </div>
 
