@@ -712,7 +712,9 @@ section { position: relative; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .stat-item:nth-child(2) { border-right: none; }
   .stat-item:nth-child(1), .stat-item:nth-child(2) { border-bottom: 1px solid rgba(255,255,255,0.07); }
-  .stat-item { padding: 40px 20px; }
+  .stat-item { padding: 30px 12px; }
+  .stat-number { font-size: 2.4rem; }
+  .stat-label { font-size: 0.65rem; letter-spacing: 0.5px; }
 }
 
 /* =============================================
