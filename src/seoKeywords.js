@@ -1,0 +1,25 @@
+// Add or modify keywords in this array. They will automatically be injected into the website's SEO meta tags!
+export const SEO_KEYWORDS = [
+  "Punnagai Dental Hospital",
+  "Implant Centre",
+  "Koranad",
+  "Mayiladuthurai",
+  "Dentists",
+  "Dental Implants",
+  "Root Canal",
+  "Dr Venkatesh R",
+  "Best Dentist in Mayiladuthurai",
+  "Oral Care",
+  "Dental Clinic",
+  "Tooth Extraction",
+  "Braces and Aligners",
+  "Orthodontics",
+  "Cosmetic Dentistry",
+  "Smile Designing",
+  "Laminates and Veneers",
+  "Ceramic Crowns",
+  "Teeth Whitening",
+  "Teeth Cleaning",
+  "Pediatric Dentistry",
+  "Emergency Dentist Mayiladuthurai"
+];
