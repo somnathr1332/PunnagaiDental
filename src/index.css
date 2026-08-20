@@ -791,6 +791,23 @@ section { position: relative; }
 .service-card.featured::after { background: var(--blue-bright); }
 .service-card.wide { grid-column: span 2; }
 .sc-content { position: relative; z-index: 1; }
+.sc-image {
+  margin: -40px -36px 24px -36px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: var(--r-md) var(--r-md) 0 0;
+  position: relative;
+  z-index: 1;
+}
+.sc-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease);
+}
+.service-card:hover .sc-image img {
+  transform: scale(1.08);
+}
 .sc-icon {
   width: 60px; height: 60px;
   border-radius: var(--r-sm);

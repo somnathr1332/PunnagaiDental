@@ -10,6 +10,7 @@ const SERVICES = [
     iconClass: 'sc-icon-mint',
     title: 'Teeth Whitening',
     desc: 'Professional bleaching that brightens your smile up to 8 shades in a single clinical session.',
+    image: '/assets/images/services/teeth-whitening.png',
     featured: false,
     wide: false,
     badge: 'Most Popular',
@@ -49,6 +50,7 @@ const SERVICES = [
     iconClass: 'sc-icon-warm',
     title: 'Braces & Aligners',
     desc: 'Custom clear aligners and traditional braces for correcting crowded or misaligned teeth.',
+    image: '/assets/images/services/braces.png',
     featured: false,
     wide: false,
     badge: null,
@@ -62,6 +64,7 @@ const SERVICES = [
     iconClass: 'sc-icon-dark',
     title: 'Root Canal Treatment',
     desc: 'Advanced, virtually painless endodontic therapy using rotary files and modern local anesthesia.',
+    image: '/assets/images/services/root-canal.png',
     featured: false,
     wide: false,
     badge: null,
@@ -75,6 +78,7 @@ const SERVICES = [
     iconClass: 'sc-icon-mint',
     title: 'Laminates & Veneers',
     desc: 'Thin porcelain shells to correct chips, gaps and discolouration for a picture-perfect smile.',
+    image: '/assets/images/services/veneers.png',
     featured: false,
     wide: false,
     badge: null,
@@ -104,6 +108,11 @@ export default function Services() {
               key={i}
               className={`service-card reveal reveal-delay-${(i % 3) + 1}${s.featured ? ' featured' : ''}${s.wide ? ' wide' : ''}`}
             >
+              {s.image && (
+                <div className="sc-image">
+                  <img src={s.image} alt={s.title} />
+                </div>
+              )}
               <div className="sc-content">
                 <div className={`sc-icon ${s.iconClass}`}>
                   {s.icon}
