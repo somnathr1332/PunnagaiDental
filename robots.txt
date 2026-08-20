@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://somnath.github.io/PunnagaiDental/sitemap.xml
