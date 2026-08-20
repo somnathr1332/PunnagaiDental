@@ -1631,6 +1631,7 @@ textarea.form-control { resize: vertical; min-height: 110px; }
 @media (max-width: 600px) {
   /* General Sections */
   section { padding: 60px 0; }
+  .container { padding: 0 16px; }
   
   /* Typography */
   .hero-h1 { font-size: 2.2rem; }
@@ -1662,7 +1663,8 @@ textarea.form-control { resize: vertical; min-height: 110px; }
   .form-row { grid-template-columns: 1fr; gap: 0; }
   .form-row .form-field { margin-bottom: 16px !important; width: 100%; }
   .modes-grid { grid-template-columns: 1fr; }
-  .slots-grid { grid-template-columns: repeat(3, 1fr); }
+  .slots-grid { grid-template-columns: repeat(2, 1fr); }
+  .booking-panel { padding: 24px 16px; margin: 0 -8px; }
   
   /* Chatbot */
   .chatbot-wrapper { bottom: 20px; right: 15px; }
