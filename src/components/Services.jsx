@@ -24,6 +24,7 @@ const SERVICES = [
     iconClass: 'sc-icon-sage',
     title: 'Dental Implants',
     desc: 'Titanium implants anchored in the jawbone, topped with natural shade-matched porcelain crowns for a permanent, natural look that lasts a lifetime.',
+    image: './assets/images/services/dental-implants.png',
     featured: false,
     wide: true,
     badge: 'Advanced',
