@@ -111,7 +111,7 @@ export default function Services() {
             >
               {s.image && (
                 <div className="sc-image">
-                  <img src={s.image} alt={s.title} />
+                  <img src={s.image} alt={`${s.title} at Punnagai Dental Hospital in Mayiladuthurai`} />
                 </div>
               )}
               <div className="sc-content">
