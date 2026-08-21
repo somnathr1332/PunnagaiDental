@@ -40,8 +40,6 @@ const SERVICES = [
     iconClass: 'sc-icon-mint',
     title: '3D Face Scanner',
     desc: 'Cutting-edge facial scanning captures precise 3D aesthetics to model and simulate cosmetic and reconstructive results before procedure begins.',
-    image: './assets/images/services/face-scanner.png',
-    alt: 'High-tech 3D face scanner simulating patient facial aesthetics at Punnagai Dental',
     featured: false,
     wide: false,
     badge: 'Modern tech',
