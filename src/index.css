@@ -1725,7 +1725,12 @@ textarea.form-control { resize: vertical; min-height: 110px; }
     max-height: 500px;
   }
   .chatbot-trigger { width: 55px; height: 55px; }
-  .chatbot-pill { display: none; }
+  .chatbot-pill {
+    display: block;
+    padding: 8px 14px;
+    font-size: 0.76rem;
+    border-radius: 14px;
+  }
   
   /* Modals */
   .modal-box { padding: 40px 24px; width: 90%; }
