@@ -1435,6 +1435,37 @@ textarea.form-control { resize: vertical; min-height: 110px; }
    CHATBOT
    ============================================= */
 .chatbot-wrapper { position: fixed; bottom: 28px; right: 28px; z-index: 999; }
+.chatbot-trigger-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.chatbot-pill {
+  background: white;
+  color: var(--text-dark);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 10px 18px;
+  border-radius: 30px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  border: 1.5px solid var(--border-light);
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  animation: floatPill 3s ease-in-out infinite;
+  transition: all 0.3s var(--spring);
+}
+.chatbot-pill:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(27,127,212,0.18);
+  border-color: var(--blue-light);
+  color: var(--blue);
+}
+@keyframes floatPill {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
 .chatbot-trigger {
   width: 60px; height: 60px;
   background: var(--grad-accent);
@@ -1695,6 +1726,7 @@ textarea.form-control { resize: vertical; min-height: 110px; }
     max-height: 500px;
   }
   .chatbot-trigger { width: 55px; height: 55px; }
+  .chatbot-pill { display: none; }
   
   /* Modals */
   .modal-box { padding: 40px 24px; width: 90%; }

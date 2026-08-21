@@ -65,32 +65,37 @@ export default function Chatbot() {
     <div className="chatbot-wrapper">
       {/* Floating trigger bubble */}
       {!isOpen && (
-        <button
-          className="chatbot-trigger"
-          onClick={() => setIsOpen(true)}
-          aria-label="Open Dental Assistant Chatbot"
-          title="Chat with AI Assistant"
-        >
-          {/* Robot / AI face icon */}
-          <svg width="28" height="28" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            {/* Antenna */}
-            <line x1="32" y1="4" x2="32" y2="14" stroke="white" strokeWidth="3" strokeLinecap="round"/>
-            <circle cx="32" cy="3" r="2.5" fill="white"/>
-            {/* Head */}
-            <rect x="10" y="14" width="44" height="34" rx="9" fill="white" fillOpacity="0.18" stroke="white" strokeWidth="2.5"/>
-            {/* Eyes */}
-            <rect x="18" y="24" width="10" height="8" rx="3" fill="white"/>
-            <rect x="36" y="24" width="10" height="8" rx="3" fill="white"/>
-            {/* Eye pupils */}
-            <rect x="21" y="27" width="4" height="4" rx="2" fill="rgba(27,127,212,0.9)"/>
-            <rect x="39" y="27" width="4" height="4" rx="2" fill="rgba(27,127,212,0.9)"/>
-            {/* Mouth — happy smile */}
-            <path d="M22 38 Q32 46 42 38" stroke="white" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
-            {/* Ears / side bolts */}
-            <rect x="5" y="26" width="5" height="10" rx="2.5" fill="white" fillOpacity="0.5"/>
-            <rect x="54" y="26" width="5" height="10" rx="2.5" fill="white" fillOpacity="0.5"/>
-          </svg>
-        </button>
+        <div className="chatbot-trigger-container">
+          <div className="chatbot-pill" onClick={() => setIsOpen(true)}>
+            Ask me anything! 😊
+          </div>
+          <button
+            className="chatbot-trigger"
+            onClick={() => setIsOpen(true)}
+            aria-label="Open Dental Assistant Chatbot"
+            title="Chat with AI Assistant"
+          >
+            {/* Robot / AI face icon */}
+            <svg width="28" height="28" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {/* Antenna */}
+              <line x1="32" y1="4" x2="32" y2="14" stroke="white" strokeWidth="3" strokeLinecap="round"/>
+              <circle cx="32" cy="3" r="2.5" fill="white"/>
+              {/* Head */}
+              <rect x="10" y="14" width="44" height="34" rx="9" fill="white" fillOpacity="0.18" stroke="white" strokeWidth="2.5"/>
+              {/* Eyes */}
+              <rect x="18" y="24" width="10" height="8" rx="3" fill="white"/>
+              <rect x="36" y="24" width="10" height="8" rx="3" fill="white"/>
+              {/* Eye pupils */}
+              <rect x="21" y="27" width="4" height="4" rx="2" fill="rgba(27,127,212,0.9)"/>
+              <rect x="39" y="27" width="4" height="4" rx="2" fill="rgba(27,127,212,0.9)"/>
+              {/* Mouth — happy smile */}
+              <path d="M22 38 Q32 46 42 38" stroke="white" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
+              {/* Ears / side bolts */}
+              <rect x="5" y="26" width="5" height="10" rx="2.5" fill="white" fillOpacity="0.5"/>
+              <rect x="54" y="26" width="5" height="10" rx="2.5" fill="white" fillOpacity="0.5"/>
+            </svg>
+          </button>
+        </div>
       )}
 
       {/* Chat window */}
