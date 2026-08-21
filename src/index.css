@@ -1727,9 +1727,9 @@ textarea.form-control { resize: vertical; min-height: 110px; }
   .chatbot-trigger { width: 55px; height: 55px; }
   .chatbot-pill {
     display: block;
-    padding: 8px 14px;
-    font-size: 0.76rem;
-    border-radius: 14px;
+    padding: 6px 12px;
+    font-size: 0.65rem;
+    border-radius: 12px;
   }
   
   /* Modals */
