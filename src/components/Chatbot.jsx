@@ -67,7 +67,7 @@ export default function Chatbot() {
       {!isOpen && (
         <div className="chatbot-trigger-container">
           <div className="chatbot-pill" onClick={() => setIsOpen(true)}>
-            Ask me anything! 😊
+            Ask me anything
           </div>
           <button
             className="chatbot-trigger"
