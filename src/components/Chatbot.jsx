@@ -40,7 +40,7 @@ export default function Chatbot() {
       );
     }
     if (text.includes('doctor') || text.includes('specialist') || text.includes('venkatesh') || text.includes('mds') || text.includes('implantologist')) {
-      return 'Dr. Venkatesh R (BDS, MDS) is our chief surgeon and implantologist with 10+ years of experience in advanced dental surgery.';
+      return 'Dr. Venkatesh R (BDS, MDS) is our chief surgeon and implantologist with 25+ years of experience in advanced dental surgery.';
     }
     if (text.includes('mobile') || text.includes('call') || text.includes('phone') || text.includes('number') || text.includes('contact')) {
       return 'You can reach us directly at +91 93602 93815 for appointments and emergency care.';

@@ -21,7 +21,8 @@ export default function Doctor() {
           <div className="doctor-image-side">
             <img
               src={doctorImg}
-              alt="Dr. R. Venkatesh"
+              alt="Dr. R. Venkatesh MDS (Prostho) Chief Implantologist and Surgeon at Punnagai Dental Hospital"
+              loading="lazy"
             />
             <div className="doctor-image-overlay" />
             <div className="doctor-image-badge">
@@ -58,16 +59,16 @@ export default function Doctor() {
             </blockquote>
 
             <p className="doctor-bio-text" style={{ marginBottom: '32px' }}>
-              Dr. R. Venkatesh is a highly distinguished Prosthodontist and Implantologist with over a decade of clinical expertise. Having mastered implantology from New York University (USA) and earned a Diplomate in Laser Dentistry, he specializes in advanced dental implants, full-mouth reconstructions, painless laser surgeries, and complex rehabilitation.
+              Dr. R. Venkatesh is a highly distinguished Prosthodontist and Implantologist with over 25 years of clinical expertise. Having mastered implantology from New York University (USA) and earned a Diplomate in Laser Dentistry, he specializes in advanced dental implants, full-mouth reconstructions, painless laser surgeries, and complex rehabilitation.
             </p>
 
             <div className="doctor-stats-row" style={{ paddingTop: '24px' }}>
               <div className="ds-item">
-                <div className="ds-num">10+</div>
+                <div className="ds-num">25+</div>
                 <div className="ds-label">Years Exp</div>
               </div>
               <div className="ds-item">
-                <div className="ds-num">5k+</div>
+                <div className="ds-num">6k+</div>
                 <div className="ds-label">Happy Smiles</div>
               </div>
               <div className="ds-item">

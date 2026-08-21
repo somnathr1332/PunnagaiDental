@@ -72,8 +72,8 @@ function ParticleCanvas() {
 // Stats band
 function StatsBand() {
   const stats = [
-    { num: '3,000+', label: 'Happy Patients' },
-    { num: '10+', label: 'Years Experience' },
+    { num: '6,000+', label: 'Happy Patients' },
+    { num: '25+', label: 'Years Experience' },
     { num: '4.65★', label: 'Google Rating' },
     { num: '₹200', label: 'Consultation Fee' },
   ];

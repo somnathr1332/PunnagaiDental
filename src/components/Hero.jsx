@@ -68,7 +68,7 @@ export default function Hero() {
               ))}
             </div>
             <div className="hero-trust-text">
-              <strong>3,000+ Happy Patients</strong>
+              <strong>6,000+ Happy Patients</strong>
               <span>Trusted across Mayiladuthurai</span>
             </div>
           </div>
@@ -82,7 +82,9 @@ export default function Hero() {
           <div className="hero-image-frame">
             <img
               src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=800&q=80"
-              alt="Healthy Smile"
+              alt="Beautiful healthy smile showing professional dental care results at Punnagai Dental Hospital"
+              fetchPriority="high"
+              loading="eager"
             />
           </div>
 
@@ -95,7 +97,7 @@ export default function Hero() {
                 </svg>
               </div>
               <div className="hfc-text">
-                <strong>10+ Years Experience</strong>
+                <strong>25+ Years Experience</strong>
                 <span>Dr. Venkatesh R — MDS</span>
               </div>
             </div>

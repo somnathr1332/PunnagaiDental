@@ -27,21 +27,23 @@ export default function About() {
               <div className="about-img-main">
                 <img
                   src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80"
-                  alt="Modern Dental Clinic"
+                  alt="Modern dental clinic treatment room at Punnagai Dental Hospital in Mayiladuthurai"
+                  loading="lazy"
                 />
               </div>
 
               <div className="about-img-small">
                 <img
                   src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=400&q=80"
-                  alt="Dental Equipment"
+                  alt="Advanced clean dental equipment and clinical setups at Punnagai Dental"
+                  loading="lazy"
                 />
               </div>
 
               {/* Floating badge */}
               <div className="about-mini-card about-mini-card-1">
                 <div className="amc-inner">
-                  <div className="amc-icon">10+</div>
+                  <div className="amc-icon">25+</div>
                   <div className="amc-text">
                     <strong>Years of Excellence</strong>
                     <span>In clinical dental care</span>
